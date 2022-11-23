@@ -23,5 +23,5 @@ jobs:
           token:      ${{ secrets.K8S_SA_TOKEN }}
           namespace:  default
           
-      - name: Check Helm List
-        run: helm list 
+      - name: Check Helm Install
+        run: helm install myapp ./
