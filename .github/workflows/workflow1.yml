@@ -24,4 +24,4 @@ jobs:
           namespace:  default
           
       - name: Helm Install
-        run: helm upgrade --install myapp ./
+        run: helm upgrade --install myapp --set replicas=3 --set tag=v1 ./
